@@ -7,12 +7,12 @@ let masterSongName= document.getElementById("masterSongName");
 
 let songs= [
 
-    { songname: "Shape of you", filePath: "1.mp3", coverpath: "E:\\spotify\\cover.jpg" },
-    { songname: "Electric", filePath: "2.mp3", coverpath: "E:\\spotify\\katyp.jpg" },
-    { songname: "Fake a Smile", filePath: "3.mp3", coverpath: "E:\\spotify\\alan.jpg" },
-    { songname: "Go Down Eh", filePath: "4.mp3", coverpath: "E:\\spotify\\sean.jpg" },
-    { songname: "Jhoota hae versace", filePath: "5.mp3", coverpath: "E:\\spotify\\hindi.jpg" },
-    { songname: "Your Power", filePath: "6.mp3", coverpath: "E:\\spotify\\Billie.jpg" },
+    { songname: "Shape of you", filePath: "1.mp3", coverpath: "cover.jpg" },
+    { songname: "Electric", filePath: "2.mp3", coverpath: "katyp.jpg" },
+    { songname: "Fake a Smile", filePath: "3.mp3", coverpath: "alan.jpg" },
+    { songname: "Go Down Eh", filePath: "4.mp3", coverpath: "sean.jpg" },
+    { songname: "Jhoota hae versace", filePath: "5.mp3", coverpath: "hindi.jpg" },
+    { songname: "Your Power", filePath: "6.mp3", coverpath: "Billie.jpg" },
 ]
 
 // songItems.forEach(element, i)=>{

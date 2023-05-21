@@ -7,12 +7,12 @@ let masterSongName= document.getElementById("masterSongName");
 
 let songs= [
 
-    { songname: "Shape of you", filePath: "E:\\spotify\\1.mp3", coverpath: "E:\\spotify\\cover.jpg" },
-    { songname: "Electric", filePath: "E:\\spotify\\2.mp3", coverpath: "E:\\spotify\\katyp.jpg" },
-    { songname: "Fake a Smile", filePath: "E:\\spotify\\3.mp3", coverpath: "E:\\spotify\\alan.jpg" },
-    { songname: "Go Down Eh", filePath: "E:\\spotify\\4.mp3", coverpath: "E:\\spotify\\sean.jpg" },
-    { songname: "Jhoota hae versace", filePath: "E:\\spotify\\5.mp3", coverpath: "E:\\spotify\\hindi.jpg" },
-    { songname: "Your Power", filePath: "E:\\spotify\\6.mp3", coverpath: "E:\\spotify\\Billie.jpg" },
+    { songname: "Shape of you", filePath: "1.mp3", coverpath: "E:\\spotify\\cover.jpg" },
+    { songname: "Electric", filePath: "2.mp3", coverpath: "E:\\spotify\\katyp.jpg" },
+    { songname: "Fake a Smile", filePath: "3.mp3", coverpath: "E:\\spotify\\alan.jpg" },
+    { songname: "Go Down Eh", filePath: "4.mp3", coverpath: "E:\\spotify\\sean.jpg" },
+    { songname: "Jhoota hae versace", filePath: "5.mp3", coverpath: "E:\\spotify\\hindi.jpg" },
+    { songname: "Your Power", filePath: "6.mp3", coverpath: "E:\\spotify\\Billie.jpg" },
 ]
 
 // songItems.forEach(element, i)=>{
@@ -81,7 +81,7 @@ const makeAllPlays= ()=>{
        e.target.classList.remove('fa-play');
        e.target.classList.add('fa-pause'); 
 
-       audioElement.src= `E:\\spotify\\${songIndex}.mp3`;
+       audioElement.src= `${songIndex}.mp3`;
        masterSongName.innerText= songs[songIndex-1].songname;
        audioElement.currentTime=0;
        audioElement.play();
@@ -101,7 +101,7 @@ const makeAllPlays= ()=>{
    else{
       songIndex += 1;
    }
-   audioElement.src= `E:\\spotify\\${songIndex}.mp3`;
+   audioElement.src= `${songIndex}.mp3`;
    masterSongName.innerText= songs[songIndex].songname;
        audioElement.currentTime=0;
        audioElement.play();
@@ -119,7 +119,7 @@ const makeAllPlays= ()=>{
    else{
       songIndex -= 1;
    }
-   audioElement.src= `E:\\spotify\\${songIndex}.mp3`;
+   audioElement.src= `${songIndex}.mp3`;
        masterSongName.innerText= songs[songIndex].songname;
        audioElement.currentTime=0;
        audioElement.play();
